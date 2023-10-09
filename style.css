@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+    overflow-x: hidden;
+}
+body, html{
+    height: 100%;
+}
+textarea.text_area{
+    text-align: start;
+    outline: none;
+    cursor: text;
+    padding: 1rem;
+    margin: 0 1rem;
+    -webkit-box-shadow: 0px 0px 47px 1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 47px 1px rgba(0,0,0,0.51);
+    box-shadow: 0px 0px 47px 1px rgba(0,0,0,0.51);
+    color: white;
+}
+div.area_texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0 0.1rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+}
+div.field_text{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 1rem 0;
+}
+div.field_text > p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+div.btn_checkbox > input.checkbox[type=checkbox]{
+    cursor: pointer;
+}
+div.btn_checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+main h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: rgb(57, 54, 54);
+}
+div.btn_checkbox button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(83, 83, 173);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: 0.5s;
+}
+div.btn_ckeckbox button:hover{
+    background-color: rgb(28, 28, 209);
+}
+@media screen and (max-width: 768px){
+    div.area_texto{
+        display: block;
+    }
+    div.field_text{
+        width: 85%;
+    }
+    div.field_text textarea{
+        width: 70%;
+    }
+    main h1{
+        text-align: start;
+        padding: 2rem;
+    }
+    div.btn_checkbox button{
+        width: 80%;
+        padding: 0 0.5rem;
+        font-size: 12px;
+    }
+}
