@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px){
+    div.area_texto{
+        display: block;
+    }
+    div.field_text{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    div.field_text textarea{
+        width: 70%;
+    }
+    main h1{
+        text-align: start;
+        padding: 2rem;
+    }
+    div.btn_checkbox button{
+        width: 100%;
+        padding: 0 0.5rem;
+        font-size: 15px;
+    }
+}

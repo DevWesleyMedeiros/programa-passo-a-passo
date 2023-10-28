@@ -18,7 +18,7 @@ textarea.text_area{
     -webkit-box-shadow: 0px 0px 47px 1px rgba(0,0,0,0.51);
     -moz-box-shadow: 0px 0px 47px 1px rgba(0,0,0,0.51);
     box-shadow: 0px 0px 47px 1px rgba(0,0,0,0.51);
-    color: white;
+    color: black;
 }
 div.area_texto{
     display: flex;
@@ -61,7 +61,7 @@ main h1{
     text-align: center;
     background-color: rgb(57, 54, 54);
 }
-div.btn_checkbox button{
+div.field_text > div.btn_checkbox > button.edit_textarea, button.button_creator_next_step{
     width: 200px;
     height: 50px;
     border-radius: 5px;
@@ -70,27 +70,4 @@ div.btn_checkbox button{
     cursor: pointer;
     margin-top: 0.5rem;
     transition: 0.5s;
-}
-div.btn_ckeckbox button:hover{
-    background-color: rgb(28, 28, 209);
-}
-@media screen and (max-width: 768px){
-    div.area_texto{
-        display: block;
-    }
-    div.field_text{
-        width: 85%;
-    }
-    div.field_text textarea{
-        width: 70%;
-    }
-    main h1{
-        text-align: start;
-        padding: 2rem;
-    }
-    div.btn_checkbox button{
-        width: 80%;
-        padding: 0 0.5rem;
-        font-size: 12px;
-    }
 }
