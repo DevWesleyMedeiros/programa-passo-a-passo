@@ -1,4 +1,3 @@
-window.onload = function(){
 const btnCreatorNextStep = document.querySelector(".button_creator_next_step")
 const inputCheckbox = document.querySelector(".checkbox")
 const divMainFatherAreaTexto = document.querySelector(".area_texto")
@@ -22,8 +21,8 @@ function elementHtmltextAreaGenerator(){
     textarea.setAttribute("cols", 20);
     textarea.setAttribute("rows", 10);
     textarea.setAttribute("class", "text_area");
-    textarea.setAttribute("readonly", "")
-    textarea.setAttribute("disabled", "")
+    // textarea.setAttribute("readonly", "readonly")
+    // textarea.setAttribute("disabled", "disabled")
     textarea.setAttribute("name", "text_area")
     textarea.setAttribute("placeholder", "Escreva seu passo");
     textarea.style.cursor = "not-allowed"
@@ -71,18 +70,11 @@ function elementHtmlPGenerator(step){
         return tagP
 }
 
-btnEditTextArea.addEventListener("click", ()=>{
-    let textAreaElement = elementHtmltextAreaGenerator()
-    textAreaElement.removeAttribute("disabled")
-    textAreaElement.removeAttribute("readonly")
-    textAreaElement.style.cursor = "text"
-})
-
 btnCreatorNextStep.addEventListener("click", ()=>{
     if(inputCheckbox.checked){
         elementHtmldivGenerator();
+        btnCreatorNextStep.disable = true
     }else{
         alert("Você precisa finalizar o passo")
     }
 })
-}
